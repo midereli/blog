@@ -31,8 +31,8 @@ cover:
     relative: false # when using page bundles set this to true
     hidden: true # only hide on current single page
 editPost:
-    URL: "https://github.com/<path_to_repo>/content"
-    Text: "Suggest Changes" # edit text
+    URL: "https://github.com/midereli/blog/tree/main/content"
+    Text: "Improve this page" # edit text
     appendFilePath: true # to append file path to Edit link
 ---
 To install the AWS CloudWatch agent on your Ubuntu Server 22.04, you should download the appropriate installation package depending on the server's CPU architecture. To find the appropriate installation package, you can run the following command:

@@ -31,8 +31,8 @@ cover:
     relative: false # when using page bundles set this to true
     hidden: true # only hide on current single page
 editPost:
-    URL: "https://github.com/<path_to_repo>/content"
-    Text: "Suggest Changes" # edit text
+    URL: "https://github.com/midereli/blog/tree/main/content"
+    Text: "Improve this page" # edit text
     appendFilePath: true # to append file path to Edit link
 ---
 When coding is done, you can package your Java application in an easily distributable JAR file. After the JAR file is ready, you can start the application with the java command. You should also provide the name of the package with the -jar argument.
