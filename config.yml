@@ -31,7 +31,7 @@ params:
   ShowShareButtons: true
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
-  ShowCodeCopyButtons: false
+  ShowCodeCopyButtons: true
   ShowWordCount: true
   ShowRssButtonInSectionTermList: true
   UseHugoToc: true
@@ -46,10 +46,10 @@ params:
   assets:
     # disableHLJS: true # to disable highlight.js
     # disableFingerprinting: true
-    favicon: "<link / abs url>"
-    favicon16x16: "<link / abs url>"
-    favicon32x32: "<link / abs url>"
-    apple_touch_icon: "<link / abs url>"
+    favicon: "favicon.ico"
+    favicon16x16: "favicon-16x16.png"
+    favicon32x32: "favicon-32x32.png"
+    apple_touch_icon: "apple-touch-icon.png"
     safari_pinned_tab: "<link / abs url>"
 
   label:
@@ -86,10 +86,10 @@ params:
   analytics:
     google:
       SiteVerificationTag: "G-Y8GZPVSQW5"
-    bing:
-      SiteVerificationTag: "XYZabc"
-    yandex:
-      SiteVerificationTag: "XYZabc"
+    # bing:
+    #   SiteVerificationTag: "XYZabc"
+    # yandex:
+    #   SiteVerificationTag: "XYZabc"
 
   cover:
     hidden: true # hide everywhere but not in structured data
@@ -113,18 +113,22 @@ params:
     keys: ["title", "permalink", "summary", "content"]
 menu:
   main:
-    - identifier: categories
-      name: categories
-      url: /categories/
-      weight: 10
+    # - identifier: categories
+    #   name: categories
+    #   url: /categories/
+    #   weight: 10
     - identifier: tags
-      name: tags
+      name: Tags
       url: /tags/
-      weight: 20
-    - identifier: example
-      name: example.org
-      url: https://example.org
-      weight: 30
+      weight: 10
+    # - identifier: search
+    #   name: Search
+    #   url: /search/
+    #   weight: 20  
+    # - identifier: example
+    #   name: example.org
+    #   url: https://example.org
+    #   weight: 30
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 pygmentsUseClasses: true
 markup:
@@ -135,3 +139,9 @@ markup:
     # guessSyntax: true
     # lineNos: true
     # style: monokai
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # is necessary

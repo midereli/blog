@@ -35,7 +35,7 @@ editPost:
     Text: "Improve this page" # edit text
     appendFilePath: true # to append file path to Edit link
 ---
-When coding is done, you can package your Java application in an easily distributable JAR file. After the JAR file is ready, you can start the application with the java command. You should also provide the name of the package with the -jar argument.
+When development is done, you can package your Java application in an easily distributable JAR file. Ready your JAR file and you start the application with the `java` command. Provide the name of the package with the `-jar` argument.
 
 ```Shell
 java -jar HelloWorld.jar

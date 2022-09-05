@@ -55,13 +55,13 @@ Vendor ID: GenuineIntel
 
 Depending on the server's CPU architecture you can download one of the following installation packages.
 
-For ARM (or aarch64) download this one:
+For ARM (or aarch64) download:
 
 ```Shell
 wget https://s3.amazonaws.com/amazoncloudwatch-agent/ubuntu/amd64/latest/amazon-cloudwatch-agent.deb
 ```
 
-For Intel (or x86_64) download this one:
+For Intel (or x86_64) download:
 
 ```Shell
 wget https://s3.amazonaws.com/amazoncloudwatch-agent/ubuntu/arm64/latest/amazon-cloudwatch-agent.deb
@@ -69,7 +69,7 @@ wget https://s3.amazonaws.com/amazoncloudwatch-agent/ubuntu/arm64/latest/amazon-
 
 After downloading simply run the following command in the directory which you have downloaded the package.
 
-Now, finally, comes the fun part. 😊 We are going to configure the agent. To do that, run:
+Now, finally, comes the fun part... 😊 We are going to configure the agent. To do that, run:
 
 ```Shell
 sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-config-wizard

@@ -35,7 +35,7 @@ editPost:
     Text: "Improve this page" # edit text
     appendFilePath: true # to append file path to Edit link
 ---
-When implementing SRE principles in an organization, firstly we must define SLIs (that are: service level indicators) and SLOs (and those are: service level objectives).
+When implementing SRE principles in an organization, we must firstly define SLIs (service level indicators) and SLOs (service level objectives).
 
 Service level indicators (SLIs) are measurable, quantitative aspects of a service. Some basic examples include:
 
