@@ -22,7 +22,7 @@ params:
   keywords: [AWS, DevOps, Ubuntu, Linux]
   author: Merih İnal Dereli
   # author: ["Me", "You"] # multiple authors
-  images: ["<link or path of image for opengraph, twitter-cards>"]
+  images: ["apple-touch-icon.png"] #["<link or path of image for opengraph, twitter-cards>"]
   DateFormat: "January 2, 2006"
   defaultTheme: auto # dark, light
   disableThemeToggle: false
@@ -50,7 +50,7 @@ params:
     favicon16x16: "favicon-16x16.png"
     favicon32x32: "favicon-32x32.png"
     apple_touch_icon: "apple-touch-icon.png"
-    safari_pinned_tab: "<link / abs url>"
+    safari_pinned_tab: "favicon-16x16.png"
 
   label:
     text: "Home"

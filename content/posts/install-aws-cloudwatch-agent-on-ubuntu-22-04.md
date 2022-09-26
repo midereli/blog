@@ -25,9 +25,9 @@ ShowWordCount: true
 ShowRssButtonInSectionTermList: true
 UseHugoToc: true
 cover:
-    image: "<image path/url>" # image path/url
-    alt: "<alt text>" # alt text
-    caption: "<text>" # display caption under cover
+    #image: "<image path/url>" # image path/url
+    #alt: "<alt text>" # alt text
+    #caption: "<text>" # display caption under cover
     relative: false # when using page bundles set this to true
     hidden: true # only hide on current single page
 editPost:
@@ -69,13 +69,17 @@ wget https://s3.amazonaws.com/amazoncloudwatch-agent/ubuntu/arm64/latest/amazon-
 
 After downloading simply run the following command in the directory which you have downloaded the package.
 
+```Shell
+sudo dpkg -i -E ./amazon-cloudwatch-agent.deb
+```
+
 Now, finally, comes the fun part... 😊 We are going to configure the agent. To do that, run:
 
 ```Shell
 sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-config-wizard
 ```
 
-After answering bunch of questions on what you want to monitor or not, now you should start the agent.
+After answering bunch of questions on what you want to monitor or not, you should now start the agent.
 
 ```Shell
 sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl -a fetch-config -m ec2 -s -c file:/opt/aws/amazon-cloudwatch-agent/bin/config.json
@@ -83,6 +87,6 @@ sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl -a fetch-c
 
 Congratulations! 🥳 You have installed the AWS CloudWatch agent on your Ubuntu Server 22.04.
 
-You can now navigate to CloudWatch on your favorite browser and click **All Metrics** menu on the left. If everything went well in the installation process, you should be able to see the **CWAgent** namespace and the metrics inside that.
+You can now navigate to CloudWatch on your favorite browser and click *All Metrics* menu on the left. If everything went well in the installation process, you should be able to see the *CWAgent* namespace and the metrics inside that.
 
 Next steps might be to define alarms depending on those metrics or create dashboards to monitor your server's current and past status in one place.
